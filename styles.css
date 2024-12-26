@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Темный фон */
+    color: #E0E0E0; /* Светлый текст */
+}
+
+header {
+    background: #1F1F1F; /* Темный фон для заголовка */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#logo {
+    width: 150px; /* Ширина логотипа */
+    margin-top: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background: #1E1E1E; /* Темный фон для секций */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.image-container {
+    display: flex; /* Используем flexbox для расположения изображений в ряд */
+    justify-content: center; /* Центрируем изображения */
+    flex-wrap: wrap; /* Позволяет переносить изображения на новую строку при необходимости */
+    margin: 20px 0;
+}
+
+.image-container img {
+    width: 30%; /* Ширина изображений */
+    border-radius: 5px;
+    margin: 10px; /* Добавляем отступы между изображениями */
+    transition: transform 0.3s; /* Плавная анимация при наведении */
+}
+
+.image-container img:hover {
+    transform: scale(1.05); /* Увеличение изображения при наведении */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #1F1F1F; /* Темный фон для подвала */
+    color: #fff;
+}
+
+/* Анимация появления текста */
+.fade-in {
+    opacity: 0; /* Изначально невидимый */
+    transform: translateY(20px); /* Сдвиг вниз */
+    animation: fadeIn 0.5s forwards; /* Анимация */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* Полная видимость */
+        transform: translateY(0); /* Вернуться в исходное положение */
+    }
+}
+
+/* Задержка анимации для разных элементов */
+.fade-in:nth-child(1) { animation-delay: 0.1s; }
+.fade-in:nth-child(2) { animation-delay: 0.2s; }
+.fade-in:nth-child(3) { animation-delay: 0.3s; }
+.fade-in:nth-child(4) { animation-delay: 0.4s; }
+.fade-in:nth-child(5) { animation-delay: 0.5s; }
+.fade-in:nth-child(6) { animation-delay: 0.6s; }
+.fade-in:nth-child(7) { animation-delay: 0.7s; }
+
+
+
